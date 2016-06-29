@@ -7,9 +7,6 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 
-var paths = {
-  sass: ['./scss/**/*.scss']
-};
 
 gulp.task('default', ['sass', 'watch']);
 
@@ -27,7 +24,7 @@ gulp.task('sass', function(done) {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.sass, ['sass']);
+  gulp.watch('./scss/**/*.scss', ['sass']);
 });
 
 gulp.task('install', ['git-check'], function() {

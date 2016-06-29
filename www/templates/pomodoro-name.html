@@ -1,25 +1,17 @@
 <ion-view title="Pomodoro" id="page2" class=" ">
-    <ion-content padding="true" class="has-header">
-      <h4>
-        What are you going to work on?
-      </h4>
-      <form novalidate ng-submit="vm.form.submitName(vm.form.name)">
-        <label class="item item-input item-floating-label">
-         <span class="input-label">Pomodoro Name</span>
-         <input type="text" placeholder="Pomodoro Name" ng-model="vm.form.name" required>
-       </label>
+  <ion-content padding="true" class="has-header">
+    <h4>
+      What are you working on?
+    </h4>
+    <form novalidate ng-submit="vm.form.submitName(vm.form.name)">
+      <label class="item item-input item-floating-label">
+       <span class="input-label">Pomodoro Name</span>
+       <input type="text" placeholder="Pomodoro Name" ng-model="vm.form.name" required>
+     </label>
 
      <button type="submit" class="button button-outline button-balanced button-full">
        pomdoro me
      </button>
     </form>
-        <!-- <h1 id="page2-heading2" >Heading</h1>
-        <form id="page2-form1" class="list ">
-            <label class="item item-input " id="page2-input1">
-                <span class="input-label">Input</span>
-                <input type="text" placeholder="">
-            </label>
-        </form>
-        <a ui-sref="page3" id="page2-button2" class=" button button-positive  button-block ">Tap me!</a> -->
-    </ion-content>
+  </ion-content>
 </ion-view>

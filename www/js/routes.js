@@ -23,6 +23,12 @@ angular.module('app.routes', [])
     controller: 'timerCtrl',
     controllerAs: 'vm',
   })
+  .state('break-time', {
+    url: '/break-time',
+    templateUrl: 'templates/break-time.html',
+    controller: 'breakCtrl',
+    controllerAs: 'vm',
+  })
 
 $urlRouterProvider.otherwise('/page1')
 
